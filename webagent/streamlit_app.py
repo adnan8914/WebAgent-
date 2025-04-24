@@ -1,3 +1,4 @@
+import patch_sqlite
 #!/usr/bin/env python
 import streamlit as st
 import os
