@@ -1,7 +1,3 @@
-
-import sys
-__import__("pysqlite3")
-sys.modules["sqlite3"] = sys.modules.pop("pysqlite3")
 #!/usr/bin/env python
 import streamlit as st
 import os
@@ -10,7 +6,10 @@ from datetime import datetime
 import json
 from dotenv import load_dotenv
 from run_app import main
+import sys
 
+# Add the src directory to the Python path
+sys.path.append(os.path.join(os.path.dirname(__file__), 'webagent/src'))
 
 # Load environment variables from .env file
 load_dotenv()
