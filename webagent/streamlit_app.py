@@ -5,6 +5,8 @@ import time
 from datetime import datetime
 import json
 from dotenv import load_dotenv
+from webagent.run_app import main
+
 
 # Load environment variables from .env file
 load_dotenv()
